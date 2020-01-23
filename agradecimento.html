@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html>
 <head>
     <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -12,38 +12,71 @@
     </script>
     <style>
 
-   .inicial {
+        .all{
+            background-color:lightgray;
+            height: 550px;
+        }
+
+        .inicial {
+            margin: 0;
+            padding: 0;
+            position: fixed;
+            top: 28px;
+            left: 0;
+            bottom: 0;
+            overflow: hidden;
             color: whitesmoke;
-             background-color: white;
-            width: 80%;
-            height: 1%;
+            background-color: white;
+            width: 100%;
+            height: 22%;
             display: inline-block;
-            font-family: Verdana, sans-serif;
             flex-grow: 1;
             flex-shrink: 1;
-            /*flex-basis: 100px;*/
         }
-    .agradecimento{
-        font-family: Verdana, sans-serif;
-        background-color: #DCDCDC;
-        flex-grow: 1;
-        flex-shrink: 1;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        color: #000080;
-    }
-    .pic{
-        flex-grow: 1;
-        flex-shrink: 1;
-background-color: #DCDCDC;
-  width: 100%;
-            height: 480px;
-           
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
+
+        .agradecimento {
+            font-family: Verdana, sans-serif;
+            background-color: white;
+            height: 250px;
+            width: 250px;
+            flex-grow: 1;
+            flex-shrink: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #000080;
+        }
+
+        .space {
+            display: inline-block;
+            height: 250px;
+            width: 100%;
+            flex-grow: 1;
+            flex-shrink: 1;
+            background-color: white;
+        }
+
+        .meio {
+            height: 150px;
+            width: 450px;
+
+            border-radius:40px;
+            font-family: Verdana, sans-serif;
+            background-color: white;
+            flex-grow: 1;
+            flex-shrink: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #2E9AFE;
+        }
+
+        .thanks{
+          color:#2E9AFE;
+        }
+        .par{
+             color:#2E9AFE;
+        }
 
     </style>
 
@@ -52,18 +85,28 @@ background-color: #DCDCDC;
 
 </head>
 <body>
-      <div class="inicial">
-            <img src="topo.jpg" width="60" height="60" />
+    <div class="all">
+        <div class="inicial">
 
-        </div>
-        <div class="agradecimento">
-            <h1>Obrigado por se cadastrar!</h1>
+            <table bgcolor="#2E9AFE" width="100%"><tr height="30"><td></td></tr></table>
+            <table bgcolor="#E6E6E6" width="100%"><tr height="1"><td></td></tr></table><br>
+            <table width="100%">
+                <tr>
+                    <td width="80%"><img src="logonovo.png" width="160" height="70" /></td>
+                    <td width="5%"><a href="https://www.facebook.com/Health-n-Work-112583030283457/" target="_blank" title="Facebook"><img src="facebook-icone.png" width="45" height="45" /></a>
+                    <td width="5%"><a href="https://instagram.com/health.n.work?igshid=efmc2589rk9j" target="_blank" title="Instagram"><img src="instagram-icone.png" width="45" height="45" /></a></td>
+                </tr>
+            </table>
         </div>
 
-        <div class=" pic">
-            <img src="tenor.gif" />
-        </div>
-      
+        <div class="space"> </div>
+
+
+        <table class="meio" bgcolor="white" width="30%" align="center">
+            <td width="33%" align="center"<table align="center" bgcolor="white"><tr><td></a></td></tr><tr><td bgcolor="white" align="center"><div class="thanks"><h2>Obrigado!</h2></div> <div class="par"><p><br>Seu cadastro foi realizado com sucesso.</p></div> </td></tr></table></td>
+            <table width="100%" height="20"><tr><td></td></tr></table>
+        </table>
+
 </body>
 
 </html>
